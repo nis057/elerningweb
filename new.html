@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div Inside Image</title>
+    <style>
+        /* Style for the container div */
+        .container {
+            position: relative;
+            max-width: 100%;
+            display: inline-block; /* Make sure it behaves like an inline element */
+        }
+
+        /* Style for the image */
+        .container img {
+            max-width: 100%;
+            height: auto;
+            display: block; /* Ensure the image behaves as a block element */
+        }
+
+        /* Style for the overlay div */
+        .overlay {
+            position: absolute;
+            top: 70%;
+            left: 40%;
+            width: 60%;
+            height: 30%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: rgb(8, 8, 8);
+            font-size: 24px;
+            background:white; /* Semi-transparent blackwhi background */
+        }
+    </style>
+</head>
+<body>
+    <!-- Container div -->
+    <div class="container">
+        <!-- Image -->
+        <img src="images (1).jpg" alt="Your Image">
+        
+        <!-- Overlay div -->
+        <div class="overlay">
+        <h5>name</h5>
+        </div>
+    </div>
+</body>
+</html>

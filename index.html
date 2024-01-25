@@ -1,0 +1,191 @@
+<!-- <!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" name="fpas" onsubmit="show()">
+        <input type="text" name="fname" >
+        <input type="password" name="fpass" id="mname">
+        <input type="submit"  >
+    </form>
+
+    <script>
+        function show()
+        {
+            let a = document.forms["fpas"]["fpass"].value;
+            return false;
+
+            if(a == "")
+            {
+                alert("plese type your name");
+                return false;
+            }
+            return true;
+        }
+    </script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container
+        {
+            height: 100%;
+            width: 100%;
+            border: 1px solid black;
+        }
+        .color
+        {
+            width: 50px;
+            height: 50px;
+            margin: 5px;
+            display: inline-block;
+            transition: transform 0.3s ease ;
+        
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- <form action="" onsubmit="return show()" name="fpas">
+        <input type="text" name="fname">
+        <input type="password" name="fpass" id="mname">
+        <input type="submit">
+    </form> -->
+
+    <div id="container">
+
+    </div>
+    <script>
+            // function show() {
+            //     let a = document.forms["fpas"]["fname"].value;
+            //     let password = document.forms["fpas"]["fpass"].value;
+            //     if (a == "") {
+            //         alert("Please type your name");
+            //         return false;
+            //     }
+
+            //     if(password == "[A-Za-z]{3}")
+            //     {
+            //    }
+
+            
+            //     if(password.length<8)
+            //     {
+            //         alert("plese check your password")
+            //         return false;
+            //     }
+
+            //     return true;
+            // }
+
+        let colors =  ["red","yellow","blue"];
+         let containerDiv = document.getElementById("container");
+
+         for( let i = 0; i<colors.length;i++)
+{
+    let colorDiv = document.createElement("div");
+    colorDiv.className= "color";
+
+    colorDiv.style.backgroundColor = colors[i];
+    colorDiv.onmouseover = function() {
+                this.style.transform = "scale(1.2)";
+            };
+            colorDiv.onmouseout = function() {
+                this.style.transform = "scale(1 )";
+            };
+    containerDiv.appendChild(colorDiv);
+}
+
+    (function()
+    {
+        const a = 3.14;
+        console.log('show mw the value of given the number:',a);
+    })
+    ();
+
+
+    var age = 16; 
+//  var b = "string";
+ var linebreck = "<br/>";
+
+//  if( age > 18)
+//  {
+
+//   document.write(
+//     "<b> qulifies for driving </b>"
+//   )
+
+// }
+// else
+// {
+//   document.write(
+//     "<b> does not qulifies for driving </b>"
+//   )
+// }
+ 
+/*
+document.write("a + b = ");
+result = a + b;
+document.write(result);
+document.write(linebreck);
+
+document.write(" a - b = ");
+minus = a - b;
+document.write(minus);
+document.write(linebreck);
+
+document.write(" a * b = ");
+multy = a * b;
+document.write(multy);
+document.write(linebreck);
+*/
+
+// document.write("(( a < b ) ? 2 : 1) => ");
+// minus = ( a < b)  ? 2 : 1;
+// document.write(minus);
+//  document.write(linebreck);
+
+result = (typeof b=="string" ? "b is string" : " b is numeric");
+document.write(" result => ");
+document.write(result);
+document.write(linebreck);
+
+    function myfunc()
+      {
+        alert("submited");
+      }
+        
+      // var book= "maths";
+
+      // if( book == "maths")
+      // {
+      //   document.write("this is  mths book")
+      // }
+
+      // else if(book == "history")
+      // {
+      //   document.write(" tgis is hisory book")
+      // }
+      // else if (book == "economics")
+      // {
+      //   document.write(" tgis is economics book")
+      // }
+      
+
+      function show(a,b)
+      {
+        ()=>console.log("any time:",a+b)
+      }
+      show(2,3)
+    </script>
+</body>
+</html>

@@ -1,0 +1,686 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#elerning {
+  background: url(happy-student-with-graduation-hat-diploma-grey_231208-12979.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-position: center; */
+  height: 100vh;
+}
+
+nav {
+  background-color: white;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav ul {
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 30px;
+}
+
+nav li {
+  list-style: none;
+  height: 70px;
+}
+
+.heading {
+  text-transform: capitalize;
+  font-style: bold;
+  font-family: "Times New Roman", Times, serif;
+  color: black;
+  font-weight: 600;
+  font-size: 2.2rem;
+  word-spacing: 10px;
+}
+nav a {
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 30px;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-style: bold;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 600;
+}
+
+nav a:hover {
+  background-color: bisque;
+}
+#page {
+  width: 100px;
+  height: 30px;
+  border: none;
+  outline: none;
+  background: transparent;
+  text-transform: capitalize;
+  font-size: 1.2em;
+  color: navy;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 400;
+}
+
+#page .opt {
+  width: 200px;
+  height: 30px;
+  border: none;
+  outline: none;
+  background: transparent;
+  text-transform: capitalize;
+  font-size: 0.9em;
+  padding: 0 20px;
+  margin: 10px 10px;
+  color: black;
+  background-color: white;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 400;
+}
+
+#page .opt {
+  background-color: grey;
+  color: white;
+  padding: 0 20px;
+  margin: 20px;
+}
+button {
+  background-color: yellow;
+  box-shadow: 2px 2px 5px crimson;
+  border: none;
+  outline: none;
+}
+
+nav li:first-child {
+  margin-right: 20%;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.26);
+  height: 100vh;
+  width: 200px;
+  backdrop-filter: blur(10px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  z-index: 999;
+}
+
+.sidebar li {
+  width: 100%;
+}
+
+.sidebar a {
+  width: 100%;
+}
+
+#elerning h3 {
+  color: aqua;
+  margin-top: 10%;
+  margin-left: 10%;
+  padding: 0 20px;
+  text-transform: capitalize;
+  font-weight: 100;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  align-items: center;
+}
+#elerning h1 {
+  color: white;
+  padding: 0 20px;
+  text-transform: capitalize;
+  font-weight: 300;
+  font-size: 3.2rem;
+  font-family: "Courier New", Courier, monospace;
+}
+#elerning h2 {
+  color: white;
+  text-transform: capitalize;
+  font-weight: 300;
+  font-size: 1.2rem;
+  padding: 0 20px;
+  line-height: 30px;
+}
+
+#elerning .btn {
+  width: 150px;
+  height: 50px;
+  margin-left: 20px;
+  margin-top: 10px;
+  align-items: center;
+  background-color: aqua;
+  color: white;
+  box-shadow: 2px 2px 5px crimson;
+  border: none;
+  outline: none;
+  text-transform: capitalize;
+  font-style: bold;
+  font-weight: 200;
+  padding: 0 20px;
+}
+
+#elerning .btn2 {
+  width: 150px;
+  height: 50px;
+  margin-left: 20px;
+  margin-top: 10px;
+  align-items: center;
+  background-color: rgb(244, 248, 248);
+  color: black;
+  box-shadow: 2px 2px 5px crimson;
+  border: none;
+  outline: none;
+  text-transform: capitalize;
+  font-style: bold;
+  font-weight: 200;
+  padding: 0 20px;
+}
+#features {
+  margin-top: 10%;
+  height: 70vh;
+}
+.fa-solid {
+  padding: 0 10px;
+  color: blue;
+}
+
+.fa-graduation-cap {
+  color: blue;
+  font-size: 40px;
+  align-items: center;
+  margin-top: 10%;
+  padding: 0 90px;
+}
+.fa-globe {
+  color: blue;
+  font-size: 40px;
+  align-items: center;
+  margin-top: 10%;
+  padding: 0 90px;
+}
+.fa-house {
+  color: blue;
+  font-size: 40px;
+  align-items: center;
+  margin-top: 10%;
+  padding: 0 90px;
+}
+.fa-book-open {
+  color: blue;
+  font-size: 40px;
+  align-items: center;
+  margin-top: 10%;
+  padding: 0 90px;
+}
+.features {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.feat {
+  height: 250px;
+  margin: 10px;
+  padding: 0 20px;
+  align-items: center;
+  background-color: rgb(180, 235, 216);
+  animation: animate 2s ease-in-out;
+}
+
+.feat h1 {
+  color: black;
+  text-transform: capitalize;
+  text-align: center;
+  font-size: bold;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 300;
+  padding: 20px;
+}
+
+.feat p {
+  color: rgb(90, 87, 87);
+  text-transform: capitalize;
+  text-align: center;
+  font-size: bold;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 300;
+  padding: 0px 20px;
+}
+
+.feat:hover {
+  transform: translateY(-20px);
+  background-color: aqua;
+  color: white;
+}
+
+/* about section */
+#about {
+  height: 100vh;
+  margin-top: 5%;
+}
+.about {
+  flex-basis: 50%;
+}
+.about-coantainer {
+  height: 700px;
+  display: flex;
+  flex-direction: row;
+}
+.about-para {
+  padding: 0 20px;
+  width: 50%;
+}
+.img {
+  height: 70%;
+  width: 500px;
+  padding: 10px;
+}
+
+.head h3 {
+  color: aqua;
+  text-transform: capitalize;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  padding: 10px;
+}
+.head h1 {
+  color: black;
+  text-transform: capitalize;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 400;
+  padding: 10px;
+}
+.head p {
+  color: black;
+  text-transform: capitalize;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 400;
+  padding: 10px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 0;
+}
+
+.para p {
+  color: black;
+}
+
+.btn3 {
+  width: 150px;
+  height: 50px;
+  margin-left: 20px;
+  margin-top: 10px;
+  align-items: center;
+  background-color: aqua;
+  color: white;
+  box-shadow: 2px 2px 5px crimson;
+  border: none;
+  outline: none;
+  text-transform: capitalize;
+  font-style: bold;
+  font-weight: 200;
+  padding: 0 20px;
+}
+
+#catagory {
+  position: relative;
+  height: 100vh;
+}
+
+h2,
+h1 {
+  color: black;
+  text-align: center;
+  margin-top: 10%;
+}
+
+.cat {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.contant {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contant a {
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 2.2rem;
+  color: rgb(245, 51, 90);
+  cursor: pointer;
+}
+.content-img {
+  background-color: #645d5d;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(136, 129, 129, 0.932);
+  text-align: center;
+  margin: 10px;
+  width: 300px;
+  height: 100%;
+  transition: transform 0.3s;
+}
+
+.content-img img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ccc;
+}
+
+h6,
+small {
+  margin: 10px 0;
+}
+small {
+  color: black;
+}
+
+.content-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px crimson;
+}
+
+/* courses css */
+
+#populer {
+  position: relative;
+  height: 100vh;
+}
+.cources {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.cources-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+  margin: 20px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ccc;
+}
+
+.btn5 {
+  background-color: #dfa54f;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 0 0 8px 8px;
+  width: 100%;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+h2,
+h1 {
+  padding: 10px;
+  margin: 0;
+  text-align: center;
+}
+
+h2 {
+  color: #4caf50;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
+
+/*  footer css apply */
+
+#footer {
+  position: relative;
+  background: rgb(0, 0, 27);
+  height: 60vh;
+}
+.footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.footer .footer-nav {
+  height: 100%;
+  margin-top: 50px;
+  justify-content: center;
+}
+
+.footer-nav ul li {
+  list-style: none;
+  padding: 10px;
+}
+
+.footer-nav a {
+  text-decoration: none;
+  color: white;
+  text-transform: capitalize;
+  font-style: bold;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  padding: 0 10px;
+}
+
+.fa-greater-than {
+  color: wheat;
+}
+.footer-nav h1 {
+  text-transform: capitalize;
+  color: white;
+  padding: 10px;
+}
+.footer-nav p {
+  color: white;
+  padding: 10px 10px;
+  margin: 10px;
+}
+
+.icon {
+  list-style-type: none;
+  padding: 10px;
+}
+
+.icon li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.icon a {
+  display: inline-block;
+  position: relative;
+}
+
+.icon a i {
+  font-size: 24px;
+  color: #0e0d0d;
+}
+
+.icon a::before {
+  content: "";
+  position: absolute;
+  border: 2px solid #333;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.icon a:hover i {
+  color: #fff;
+}
+
+.icon a:hover::before {
+  background-color: #000;
+}
+.image-grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+.footer-nav img {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0;
+  margin: 5px;
+  height: 50px;
+  width: 50px;
+}
+
+.input-container {
+  position: relative;
+  display: inline-block;
+}
+
+.input-container input {
+  margin-left: 10px;
+  padding: 15px;
+  width: 200px;
+  box-sizing: border-box;
+}
+
+.input-container .btn6 {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 10px;
+  background-color: aqua;
+}
+
+.input-container input:focus {
+  box-shadow: 0px 0px 8px grey;
+}
+
+.copy {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+}
+.copy :first-child {
+  margin-right: auto;
+}
+.copy p {
+  color: white;
+  text-transform: capitalize;
+  word-spacing: 5px;
+  font-size: 0.9rem;
+  padding: 0 10px;
+}
+.copy a {
+  color: white;
+}
+
+.footer-dis {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.footer-dis ul li {
+  display: inline-block;
+  align-items: center;
+  padding: 10px;
+  list-style: none;
+  border-right:red;
+}
+
+.footer-dis a {
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+@media (max-width: 800px) {
+  .sidebar 
+  {
+    display: flex;
+  }
+  .hideonmobile {
+    display: none;
+  }
+
+  .heading {
+    margin-left: 100%;
+  }
+
+  #about {
+    position: relative;
+    margin-top: 140%;
+  }
+  .head {
+    display: flex;
+    flex-direction: column;
+  }
+  .img {
+    width: 150px;
+  }
+}
+
+@media (max-width:800px)
+{
+    #catagory
+    {
+        margin-top: 20%;
+    }
+}
+
+@media (max-width: 800px) {
+  #populer {
+    margin-top: 100%;
+  }
+  .cources {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width:800px) {
+  #footer {
+    position: relative;
+    margin-top: 160%;
+    height: 100%;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+}
